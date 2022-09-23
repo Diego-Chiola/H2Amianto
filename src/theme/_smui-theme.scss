@@ -1,0 +1,42 @@
+@use 'sass:color';
+
+@use '@material/theme/color-palette';
+
+// Svelte Colors!
+@use '@material/theme/index' as theme with (
+  $primary: #C2F1FF,
+  $secondary: #333,
+  $surface: #fff,
+  $background: #292929,
+  $error: color-palette.$red-900
+);
+
+:root {
+	font-family: Roboto, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --primary-color: #C2F1FF;
+  --secondary-color: #292929;  
+}
+
+html,
+body {
+  background-color: theme.$background;
+  color: theme.$surface;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+a {
+  color: #40b3ff;
+}
+a:visited {
+  color: color.scale(#40b3ff, $lightness: -35%);
+}
