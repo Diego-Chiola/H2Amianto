@@ -1,16 +1,16 @@
 <script type="ts">
-	import Button, { Label } from '@smui/button';
-  
-    let clicked = 0;
+
+    import "@material/typography/mdc-typography.scss";
+    import Earth from './earth.svelte';
+    import Cards from './cards.svelte';
+
 </script>
 
-<h1 color="primary">H<sub>2</sub>Amianto</h1>
+<h1 class="mdc-typography--headline2">H<sub>2</sub>Amianto</h1>
 
-<div class="tap-box">
-    <Button on:click={()=> clicked++} variant="outlined" style="border-color: #595959">
-        <Label>Cazzo</Label>
-    </Button>
-</div>
+<Earth />
+
+<Cards />
 
 <style>
     h1{
@@ -18,15 +18,13 @@
         text-align: center;
         line-height: 66.8px;
         color: var(--primary-color);
-        font-size: 3rem;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     sub{
         font-size: 2rem;
-    }
-
-    .tap-box{
-        text-align: center;
     }
 
 </style>

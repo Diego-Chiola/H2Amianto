@@ -14,8 +14,10 @@
 	},
 	"devDependencies": {
 		"@material/elevation": "^13.0.0",
+		"@material/typography": "^13.0.0",
 		"@playwright/test": "^1.25.0",
 		"@smui/button": "^6.1.0",
+		"@smui/card": "^6.1.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"prettier": "^2.6.2",
