@@ -21,6 +21,7 @@
         max-width: 85%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
     }
 
     sub{

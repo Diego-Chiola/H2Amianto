@@ -17,6 +17,8 @@
   --primary-color: #C2F1FF;
   --secondary-color: #292929; 
   --eleveted-color: #333;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --ext-elements-color: #121212;
 }
 
 html,
@@ -28,6 +30,7 @@ body {
 body{
   display: flex;
   flex-direction: column;
+  //position: relative;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -35,9 +38,9 @@ body{
   z-index: 0;
 }
 
-a {
+/*a {
   color: #40b3ff;
 }
 a:visited {
   color: color.scale(#40b3ff, $lightness: -35%);
-}
+}*/

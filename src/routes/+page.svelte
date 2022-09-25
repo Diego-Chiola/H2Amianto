@@ -1,14 +1,15 @@
 <script type="ts">
-	import Button, { Label } from '@smui/button';
-  
-    let clicked = 0;
+
+    import "@material/typography/mdc-typography.scss";
+    import Earth from './earth.svelte';
+    import Cards from './cards.svelte';
+
 </script>
 
-<div>
-    <Button on:click={()=> clicked++}>
-        <Label>Cazzo</Label>
-    </Button>
-</div>
+<Earth />
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Cards />
+
+<style>
+ 
+</style>

@@ -30,12 +30,15 @@
     <img src="/images/Earth_Eastern_Hemisphere.svg" alt="Earth" class="earth" style="filter:brightness({value}%)">
     {#if show_icon}
         <a href="/" class="air-icon">
+            <sub class="mdc-typography--subtitle1 icon-subtitle icon-sub-air" in:fade={{duration: 1000}}>Amianto nell'aria</sub>
             <img src="/images/air_icon.svg" alt="air" class="icon-hover" in:fade={{duration: 1000}}>
         </a>
         <a href="/" class="earth-icon">
+            <sub class="mdc-typography--subtitle1 icon-subtitle icon-sub-earth" in:fade={{duration: 1000}}>Amianto nella terra</sub>
             <img src="/images/earth_icon.svg" alt="earth" class="icon-hover" in:fade={{duration: 1000}}>
         </a>
         <a href="/" class="water-icon">
+            <sub class="mdc-typography--subtitle1 icon-subtitle icon-sub-water" in:fade={{duration: 1000}}>Amianto nell'acqua</sub>
             <img src="/images/water_icon.svg" alt="water" class="icon-hover" in:fade={{duration: 1000}}>
         </a>
     {/if}
@@ -75,6 +78,31 @@
     left: 50%;
     transform: translate(-50%, 0);*/
     object-fit: contain;
+}
+
+.icon-subtitle{
+    position: absolute;
+    color: var(--text-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.icon-sub-air{
+    left: 25%;
+    top: -35%;
+    transform: translate(-50%,-50%);
+}
+
+.icon-sub-earth{
+    left: 75%;
+    top: -35%;
+    transform: translate(-50%,-50%);
+}
+
+.icon-sub-water{
+    left: 50%;
+    top: 135%;
+    transform: translate(-50%,-50%);
 }
 
 .air-icon{
