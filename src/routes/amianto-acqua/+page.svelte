@@ -1,6 +1,6 @@
 <script>
     import "@material/typography/mdc-typography.scss";
-	import Water_card from "./water_card.svelte";
+    import Water_card from "./water_card.svelte";
 </script>
 
 <Water_card />

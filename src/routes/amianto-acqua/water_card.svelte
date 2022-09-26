@@ -23,11 +23,11 @@
 </div>
 
 <style>
-
     * :global(.card-style){
         position: relative;
         background-color: var(--eleveted-color);
         width: 80%;
+        max-width: 350px;
         margin: 14px auto 0 auto;
         margin-bottom: 50px;
     }
@@ -61,5 +61,4 @@
         line-height: 20px;
         margin-bottom: 0;
     } 
-    
 </style>

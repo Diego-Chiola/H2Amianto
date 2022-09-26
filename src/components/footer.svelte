@@ -1,10 +1,10 @@
 <footer> 
     <div class="social-list">
-        <a href="/">
+        <a href="https://www.youtube.com/watch?v=FnwWaaOoP7c">
             <img src="images/youtube_icon.svg" alt="youtube">
         </a>
         
-        <a href="https://www.facebook.com/people/Parco-Beigua-Unesco-Global-Geopark/100064845214427/">
+        <a href="https://www.facebook.com/NOallaminierasulBeigua/">
             <img src="images/facebook_icon.svg" alt="facebook">
         </a>
 
@@ -17,8 +17,6 @@
 
 <style>
     footer{
-        /*position: absolute;
-        bottom: -5%;*/
         margin-top: auto;
         height: 70px;
         width: 100%;

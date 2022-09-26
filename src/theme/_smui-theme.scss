@@ -19,6 +19,8 @@
   --eleveted-color: #333;
   --text-color: rgba(255, 255, 255, 0.87);
   --ext-elements-color: #121212;
+
+  scroll-behavior: smooth;
 }
 
 html,
@@ -38,9 +40,11 @@ body{
   z-index: 0;
 }
 
-/*a {
-  color: #40b3ff;
+a {
+  color: #C2F1FF;
+  text-decoration: none;
 }
-a:visited {
-  color: color.scale(#40b3ff, $lightness: -35%);
-}*/
+
+a:hover {
+  text-decoration: underline;
+}

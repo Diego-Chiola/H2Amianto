@@ -5,7 +5,7 @@
 
 <Earth_card />
 
-<img src="/images/earth_background.svg" alt="blue sky" class="img-container">
+<img src="/images/earth_background.png" alt="blue sky" class="img-container">
 
 <style>
 

@@ -2,7 +2,7 @@
 
 </script>
 
-<h1 class="mdc-typography--headline2">H<sub>2</sub>Amianto</h1>
+<h1 class="mdc-typography--headline2" id="title">H<sub>2</sub>Amianto</h1>
 
 <style>
     h1{
