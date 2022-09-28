@@ -1,6 +1,9 @@
 <script>
+    import { petition_path } from './store';
     import "@material/typography/mdc-typography.scss";
     import ErrorMessage from './error_message.svelte';
+
+    petition_path.set("./petizione");
 </script>
 
 <main class="img-container">

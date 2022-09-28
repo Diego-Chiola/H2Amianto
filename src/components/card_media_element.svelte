@@ -1,4 +1,6 @@
 <script>
+    /*Component for pages amianto-acqua, amianto-aria and amianto-terra*/
+    
     import Card, { Content, PrimaryAction, Media} from '@smui/card';
     import Button, { Label } from '@smui/button';
 
@@ -28,13 +30,13 @@
             <img src="/images/{media_cards.first_media_card["icon_source"]}" alt="{media_cards.first_media_card["icon_alt"]}" class="icon-style">
             <h2 class="mdc-typography--headline5">{media_cards.first_media_card["title"]}</h2>
         </div>
-        <PrimaryAction on:click={() => console.log("ciao")} class="primary-action">
+        <PrimaryAction on:click={() => window.open(media_cards.first_media_card["action_href"])} class="primary-action">
             <Media class="card-media-16x9" aspectRatio="16x9" style="background-image: url({media_cards.first_media_card["media_url"]})">
                 <Content touch="true" class="mdc-typography--body1">
                     <p class="text">
                         {media_cards.first_media_card["text"]}
                     </p>
-                    <Button href="http://www.nonsoloaria.com/asbdi.htm" touch="true" class="read-more">
+                    <Button touch="true" class="read-more">
                         <Label class="mdc-typography--button">scopri di più</Label>
                     </Button>
                 </Content>
@@ -47,7 +49,7 @@
             <img src="/images/{media_cards.second_media_card["icon_source"]}" alt="{media_cards.second_media_card["icon_alt"]}" class="icon-style">
             <h2 class="mdc-typography--headline5">{media_cards.second_media_card["title"]}</h2>
         </div>
-        <PrimaryAction on:click={() => console.log("ciao")} class="primary-action">
+        <PrimaryAction on:click={() => window.open(media_cards.second_media_card["action_href"])} class="primary-action">
             <Media class="card-media-16x9" aspectRatio="16x9" style="background-image: url({media_cards.second_media_card["media_url"]})">
                 <Content touch="true" class="mdc-typography--body1">
                     <p class="text">

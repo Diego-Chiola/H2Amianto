@@ -1,10 +1,17 @@
-<script>
+<script context="module">
+    import { petition_path } from '../store';
+    import Home from "../../components/btn_home.svelte";
     import Title from "../../components/title.svelte";
     import My_card from "./card.svelte";
     import "@material/typography/mdc-typography.scss";
+
+    petition_path.set("./petizione");
+    let home_path = "../home";
 </script>
 
-<Title />
+<Home {home_path}/>
+
+<Title {home_path}/>
 
 <main data-sveltekit-prefetch>
 

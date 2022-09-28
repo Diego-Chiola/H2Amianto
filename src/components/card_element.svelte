@@ -1,4 +1,6 @@
 <script>
+    /*Component for pages amianto-acqua, amianto-aria and amianto-terra*/
+
     import Card, { Content, Actions } from '@smui/card';
     import Button, { Label } from '@smui/button';
 
@@ -23,7 +25,7 @@
             </p>
         </Content>
         <Actions>
-            <Button touch="true" class="read-more">
+            <Button href="{card_param["action_href"]}" touch="true" class="read-more">
                 <Label class="mdc-typography--button">scopri di più</Label>
             </Button>
         </Actions>
@@ -61,6 +63,7 @@
     }
 
     * :global(.read-more){
+        text-decoration: none;
         margin-left: auto;
     }
 
@@ -73,6 +76,10 @@
     @media screen and (min-width: 601px){
         * :global(.card-style){
             max-width: 480px;
-        }   
+        }
+        
+        .text{
+            text-align: center;
+        }
     }
 </style>

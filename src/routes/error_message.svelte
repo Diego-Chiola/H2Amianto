@@ -58,7 +58,7 @@
             {/if}
         </Content>
         <Actions class="action">
-            <Button touch="true" class="read-more">
+            <Button href="./home" touch="true" class="read-more">
                 <Label class="mdc-typography--button">torna alla home</Label>
             </Button>
         </Actions>

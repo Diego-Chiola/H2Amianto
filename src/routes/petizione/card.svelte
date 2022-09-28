@@ -67,5 +67,9 @@
         * :global(.card-style){
             max-width: 480px;
         }
+
+        * :global(.read-more){
+            margin-right: 20px;
+        }
     }
 </style>
